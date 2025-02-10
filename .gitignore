@@ -1,0 +1,3 @@
+# Ignore Python cache folder and virtual environment folder
+/learnpy/__pycache__
+/learnpy/myenv
