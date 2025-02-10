@@ -1,0 +1,83 @@
+/* General reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+	text-align: center;
+  }
+  
+  /* Form styling */
+  form {
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	max-width: 400px;
+	width: 100%;
+  }
+  
+  /* Input field */
+  .user-input {
+	padding: 10px;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	font-size: 16px;
+  }
+  
+  /* Button styling */
+  button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s;
+  }
+  
+  .submit-btn {
+	background-color: #4CAF50;
+	color: white;
+  }
+  
+  .submit-btn:hover {
+	background-color: #45a049;
+  }
+  
+  .start-game {
+	background-color: #f0ad4e;
+	color: white;
+	margin-top: 10px;
+  }
+  
+  .start-game:disabled {
+	background-color: #e0e0e0;
+	cursor: not-allowed;
+  }
+  
+  /* Text result styles */
+  .result {
+	font-size: 18px;
+	color: #333;
+	margin-top: 20px;
+  }
+  
+  .all-guess {
+	font-size: 16px;
+	color: #555;
+	margin-top: 10px;
+  }
+
+  

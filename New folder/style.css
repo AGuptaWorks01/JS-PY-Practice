@@ -1,0 +1,15 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.yellow {
+    background-color: #e4be18;
+    color: aliceblue;
+}
+
+.red {
+    background-color: red;
+    color: aliceblue;
+}

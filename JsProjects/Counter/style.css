@@ -1,0 +1,113 @@
+/* General reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+	text-align: center;
+  }
+  
+  /* Counter value styling */
+  h2.count {
+	font-size: 4rem;
+	color: #333;
+	margin-bottom: 20px;
+	font-weight: bold;
+  }
+  
+  /* Button styling */
+  button {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 15px 30px;
+	font-size: 1.5rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	margin: 10px;
+  }
+  
+  /* Hover effect for all buttons */
+  button:hover {
+	background-color: #45a049;
+  }
+  
+  /* Minus button */
+  .minus-Btn {
+	background-color: #f44336;
+  }
+  
+  .minus-Btn:hover {
+	background-color: #e53935;
+  }
+  
+  /* Plus button */
+  .plus-Btn {
+	background-color: #4CAF50;
+  }
+  
+  .plus-Btn:hover {
+	background-color: #45a049;
+  }
+  
+  /* Reset button */
+  .rest-Btn {
+	background-color: #f0ad4e;
+  }
+  
+  .rest-Btn:hover {
+	background-color: #e6892b;
+  }
+  
+  /* Input styling */
+  input[type="number"] {
+	width: 80px;
+	padding: 8px;
+	margin-top: 10px;
+	font-size: 1.2rem;
+	text-align: center;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	font-family: Arial, sans-serif;
+  }
+  
+  /* Flexbox container for buttons */
+  div {
+	margin-top: 20px;
+  }
+  
+  /* Responsiveness */
+  @media screen and (max-width: 600px) {
+	body {
+	  flex-direction: column;
+	  justify-content: flex-start;
+	}
+  
+	h2.count {
+	  font-size: 2.5rem;
+	}
+  
+	button {
+	  font-size: 1.2rem;
+	  padding: 10px 20px;
+	  width: 80%;
+	}
+  
+	input[type="number"] {
+	  font-size: 1rem;
+	  width: 60px;
+	}
+  }
+  
