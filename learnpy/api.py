@@ -15,10 +15,10 @@
 # print(student["marks"])
 # print(student["age"])
 
-# student = {"name": "Amit", "age": 21, "city": "Mumbai"}
+# student = {"name": "janede", "age": 21, "city": "Mumbai"}
 # print(student)
 
-# print(student["name"])    # Amit
+# print(student["name"])    # janede
 # print(student.get("age")) # 21
 
 # print(student.get("gender"))
@@ -71,14 +71,14 @@
 #   print("Yes, 'free' is present.")
 
 
-# txt = "the anurg is good boy"
+# txt = "The Error is good boy"
 # if "boys" not in txt:
 #     print("yes, boy' in the text")
 
 
-# def myFucntion():
+# def myFunction():
 #     return False
-# if myFucntion():
+# if myFunction():
 #     print("Yes")
 # else:
 #     print("No")
@@ -105,9 +105,8 @@
 
 
 
-# name = input("enter name")
+# name = input("Enter name: ")
 # age = int(input("enter your age"))
-
 # print("Hello", name , "your age is", age)
 
 # a = 10
@@ -476,16 +475,16 @@
 
 
 
-class Animal:
-    def speak(self):
-        print("Animal speaks")
-class Dog(Animal):
-    def bark(self):
-        print("Dog barks")
-class Puppy(Dog):
-    def play(self):
-        print("Puppy Plays")
-puppy = Puppy()
-puppy.speak()
-puppy.bark()
-puppy.play()
+# class Animal:
+#     def speak(self):
+#         print("Animal speaks")
+# class Dog(Animal):
+#     def bark(self):
+#         print("Dog barks")
+# class Puppy(Dog):
+#     def play(self):
+#         print("Puppy Plays")
+# puppy = Puppy()
+# puppy.speak()
+# puppy.bark()
+# puppy.play()

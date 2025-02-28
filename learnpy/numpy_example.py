@@ -44,10 +44,8 @@ import numpy as np
 # random_arr = np.random.rand(3,2)
 # print(random_arr)
 
-
 # random_ints = np.random.randint(1,10, size=(3,3))
 # print(random_ints)
-
 
 
 # arr = np.array([1,2,3,4], ndmin=9)

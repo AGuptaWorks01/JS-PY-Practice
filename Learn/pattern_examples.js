@@ -11,6 +11,25 @@
 // simpleTriangle(5);
 
 
+
+
+// for (let i = 0; i < 5; i++) {
+//   let row = ''
+//   for (let j = 1; j <= i; j++) {
+//     row += " *"
+//   }
+//   console.log(row)
+// }
+
+
+// for (let i = 5; i > 0; i--) {
+//   let row = ''
+//   for (let j = 1; j <= i; j++) {
+//     row += " *"
+//   }
+//   console.log(row)
+// }
+
 // // 2. Inverted Triangle Pattern
 // const invertedTriangle = () => {
 //     for (let i = 5; i >= 1; i--) {
@@ -39,6 +58,27 @@
 // }
 // pyramidPattern(5);
 
+// for (let i = 1; i <= 5; i++) {
+//   let row = ''
+//   for (let j = 1; j <= 5 - i; j++) {
+//     row += ' '
+//   }
+//   for (let k = 1; k <= (2 * i - 1); k++) {
+//     row += "*"
+//   }
+//   console.log(row)
+// }
+// for (let i = 5; i >= 0; i--) {
+//   let row = ''
+//   for (let j = 1; j <= 5 - i; j++) {
+//     row += ' '
+//   }
+//   for (let k = 1; k <= (2 * i - 1); k++) {
+//     row += "*"
+//   }
+//   console.log(row)
+// }
+
 
 
 // // 4. Diamond Pattern
@@ -48,8 +88,6 @@
 //     let row = ' '.repeat(n - i) + '* '.repeat(i);
 //     console.log(row);
 //   }
-
-
 //   for (let i = n - 1; i >= 1; i--) {
 //     let row = ' '.repeat(n - i) + '* '.repeat(i);
 //     console.log(row);
@@ -58,7 +96,7 @@
 // diamondPattern();
 
 
-// // 5. Number Triangle Pattern
+// // // 5. Number Triangle Pattern
 // function numberTriangle() {
 //   for (let i = 1; i <= 5; i++) {
 //     let row = '';
@@ -66,6 +104,14 @@
 //       row += j + ' ';
 //     }
 //     console.log(row);
+//   }
+
+//   for (let i = 5; i >= 1; i--){
+//     let row = ''
+//     for (let j = 1; j <= i; j++){
+//       row += j + ' '
+//     }
+//     console.log(row)
 //   }
 // }
 // numberTriangle();
@@ -91,7 +137,6 @@
 // function invertedPyramid(rows) {
 //   for (let i = rows; i >= 1; i--) {
 //     let row = '';
-
 //     for (let j = 1; j <= rows - i; j++) {
 //       row += ' '
 //     }
@@ -254,36 +299,36 @@
 
 
 
-const numberPyramid = (rows) => {
-    for (let i = 1; i <= rows; i++) {
-        let row = '';
-        for (let j = 1; j <= rows - i; j++) {
-            row += ' ';
-        }
-        for (let j = 1; j <= i; j++) {
-            row += j
-        }
-        for (let j = i - 1; j >= 1; j--) {
-            row += j
-        }
-        console.log(row);
-    }
+// const numberPyramid = (rows) => {
+//   for (let i = 1; i <= rows; i++) {
+//     let row = '';
+//     for (let j = 1; j <= rows - i; j++) {
+//       row += ' ';
+//     }
+//     for (let j = 1; j <= i; j++) {
+//       row += j
+//     }
+//     for (let j = i - 1; j >= 1; j--) {
+//       row += j
+//     }
+//     console.log(row);
+//   }
 
-  for (let i = rows; i >= 1; i--) {
-    let row = '';
-    for (let j = 1; j <= rows - i; j++) {
-      row += ' '
-    }
-    for (let j = 1; j <= i; j++) {
-      row += j
-    }
-    for (let j = i - 1; j >= 1; j--) {
-      row += j
-    }
-    console.log(row);
-  }
-}
-numberPyramid(5);
+//   for (let i = rows; i >= 1; i--) {
+//     let row = '';
+//     for (let j = 1; j <= rows - i; j++) {
+//       row += ' '
+//     }
+//     for (let j = 1; j <= i; j++) {
+//       row += j
+//     }
+//     for (let j = i - 1; j >= 1; j--) {
+//       row += j
+//     }
+//     console.log(row);
+//   }
+// }
+// numberPyramid(5);
 
 
 
@@ -335,23 +380,23 @@ numberPyramid(5);
 
 
 
-// function crossPattern(n) {
-//   if (n % 2 === 0) { 
-//     return;
-//   }
+function crossPattern(n) {
+  if (n % 2 === 0) { 
+    return;
+  }
 
-//   for (let i = 0; i <= n; i++) {
-//     let row = ''
+  for (let i = 0; i <= n; i++) {
+    let row = ''
 
-//     for (let j = 0; j < n; j++) {
-//       if (i === j || i + j === n - 1) {
-//         row += "*"
-//       } else {
-//         row += ' '
-//       }
-//     }
-//     console.log(row);
-//   }
-// }
-// crossPattern(7)
+    for (let j = 0; j < n; j++) {
+      if (i === j || i + j === n - 1) {
+        row += "*"
+      } else {
+        row += ' '
+      }
+    }
+    console.log(row);
+  }
+}
+crossPattern(7)
 

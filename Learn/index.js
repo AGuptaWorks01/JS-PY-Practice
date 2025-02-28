@@ -19,18 +19,18 @@
 //     }
 // };
 
-function createRectangle(len, bre) {
-	return rectangle = {
-		length: len,
-		breath: bre,
+// function createRectangle(len, bre) {
+// 	return rectangle = {
+// 		length: len,
+// 		breath: bre,
 
-		draw() {
-			console.log("drawing rectangle...");
-		},
-	};
-}
+// 		draw() {
+// 			console.log("drawing rectangle...");
+// 		},
+// 	};
+// }
 
-let rectangle01 = createRectangle(5, 4);
+// let rectangle01 = createRectangle(5, 4);
 
 // return Rectangle;
 
@@ -81,10 +81,6 @@ let rectangle01 = createRectangle(5, 4);
 
 
 
-
-
-
-
 // function arr() {
 //     const arr = [1, 2, 3, 4, 5];
 //     let sum = 0;
@@ -102,6 +98,11 @@ let rectangle01 = createRectangle(5, 4);
 // } else {
 //     console.log(num + " is odd number");
 // }
+
+// let num = 11;
+// let res = num % 2 === 0 ? `${ num } is even` : `${ num } is odd`
+// console.log(res)
+
 
 // let a = 10;
 // let b = 15;
@@ -123,3 +124,34 @@ let rectangle01 = createRectangle(5, 4);
 // console.log(isPalindrome(12345));
 // console.log(isPalindrome('pop'));
 // console.log(isPalindrome('999'));
+
+
+
+
+// checkPrime = (number) => {
+//     let isPrime = true
+//     if (number === 1 || number < 1)
+//         return 'number is not prime'
+//     else {
+//         for (let i = 2; i <= number / 2; i++) {
+//             if (number % i === 0)
+//                 isPrime = false
+//         }
+//         if (isPrime)
+//             return 'Number is prime'
+//         else {
+//             return 'number is not prime'
+//         }
+//     }
+// }
+// console.log(checkPrime(4))
+
+
+const prime = (n) => {
+    if (n <= 1) return 'Number is not prime'
+    for (let i = 2; i <= n / 2; i++) {
+        if (n % i === 0) return 'not a prime number'
+    }
+    return 'prime number'
+}
+console.log(prime(10))

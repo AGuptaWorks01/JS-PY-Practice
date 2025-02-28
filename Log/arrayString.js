@@ -31,20 +31,20 @@
 
 
 
-let data = [5, 2, 9, 1, 5, 6];
-let temp;
-function customReverse(data, start, end) {
-    console.warn(data)
-    if (start <= end) {
-        temp = data[start]
-        data[start] = data[end]
-        data[end] = temp
-        customReverse(data, start + 1, end - 1)
-    }
-}
-customReverse(data, 0, data.length - 1)
-console.log(data);
 
+// let data = [5, 2, 9, 1, 5, 6];
+// let temp;
+// function customReverse(data, start, end) {
+//     // console.warn(data)
+//     if (start <= end) {
+//         temp = data[start]
+//         data[start] = data[end]
+//         data[end] = temp
+//         customReverse(data, start + 1, end - 1)
+//     }
+// }
+// customReverse(data, 0, data.length - 1)
+// console.log(data);
 
 
 
@@ -64,9 +64,25 @@ console.log(data);
 // }
 // let data = [50, 26, 1]
 // let result = MinMax(data)
-// console.log(result.max);
-// console.log(result.min);
+// console.log("Max value is: ",result.max);
+// console.log("Min value is: ",result.min);
 
+// const maxmin = (arr) => {
+//     let max = min = arr[0]
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > max) {
+//             max = arr[i]
+//         }
+//         if (arr[i] < min) {
+//             min = arr[i]
+//         }
+//     }
+//     return {max, min}
+// }
+// let datas = [7, 9, 0, 3, 1]
+// let rst = maxmin(datas)
+// console.log(rst.max)
+// console.log(rst.min)
 
 
 // function rotateArray(arr, k) {
@@ -96,36 +112,35 @@ console.log(data);
 
 
 // function findRepeatedCharacters(str) {
-// 	let repeatedChars = ''
-// 	let counts = ''
-// 	for (let i = 0; i < str.length; i++) {
-// 		let count = 0
-// 		for (let j = i + 1; j < str.length; j++) {
-// 			if (str[i] === str[j]) {
-// 				count++
-// 			}
-// 		}
-// 		if (count > 0 && !repeatedChars.includes(str[i])) {
-// 			repeatedChars += str[i]
-// 			counts += (count + 1) + ' '
-// 		}
-// 	}
-// 	return { repeatedChars, counts };
+//     let repeatedChars = ''
+//     let counts = ''
+//     for (let i = 0; i < str.length; i++) {
+//         let count = 0
+//         for (let j = i + 1; j < str.length; j++) {
+//             if (str[i] === str[j]) {
+//                 count++
+//             }
+//         }
+//         if (count > 0 && !repeatedChars.includes(str[i])) {
+//             repeatedChars += str[i]
+//             counts += (count + 1) + ' '
+//         }
+//     }
+//     return { repeatedChars, counts };
 // }
 // let inputString = "anurag";
 // let result = findRepeatedCharacters(inputString)
-// console.log("Repeated Characters:", result.repeatedChars);
-// console.log("Repeated Characters:", result.counts);
+// console.log("Repeated Characters:", result.repeatedChars, "Frequency of the characters is:", result.counts);
 
 
 
-// // character repated
+// // // character repated
 // let str = 'hello peter hooo'
 // let srtObj = {}
 // let maxKey = ''
 // for (let i = 0; i < str.length; i++) {
 //     let key = str[i];
-//     if (key === ' ') continue;
+//     if (key === ' ') continue; // blank ko skip karega optional hai
 //     if (!srtObj[key]) {
 //         srtObj[key] = 0
 //     }
@@ -235,19 +250,6 @@ console.log(data);
 
 
 
-// // sorting array
-// let data = [90, 45, 85, 26, 35, 10]
-// for (let i = 0; i < data.length; i++) {
-//     for (let j = 0; j < data.length; j++) {
-//         if (data[j] > data[j + 1]) {
-//             let temp = data[j]
-//             data[j] = data[j + 1]
-//             data[j + 1] = temp
-//         }
-//     }
-// }
-// console.log(data);
-
 // // Using bubbleSort shorting Array
 // let bub = [89, 13, 56, 4, 26, 9]
 // for (let i = 0; i < bub.length; i++) {
@@ -263,7 +265,7 @@ console.log(data);
 
 
 
-// reversed a string
+// // reversed a string
 // let strs = 'anurag'
 // let revesed = ''
 // for (let i = strs.length - 1; i >= 0; i--) {
@@ -295,6 +297,7 @@ console.log(data);
 // console.log(sum1);
 
 
+
 // ---------------    iterative approach
 // function sumOfArray(arr) {
 //     let sum = 0
@@ -319,8 +322,12 @@ console.log(data);
 
 
 
-
-
+// Greatest Common Divisor(GCD)
+// const gcd = (a, b) => {
+//     if (b === 0) return a;
+//     return gcd(b, a % b)
+// }
+// console.log(gcd(56, 98))
 
 
 

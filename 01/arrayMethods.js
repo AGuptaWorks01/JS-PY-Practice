@@ -28,7 +28,7 @@
 
 // let arr = [1, 2, 3];
 // arr.fill(0);
-// // console.log(arr); 
+// // console.log(arr);
 
 // let arr = [1, 2, 3];
 // console.log(arr.includes(2));
@@ -48,6 +48,6 @@
 
 
 // let str = 'hello';
-
 // let arr = Array.from(str);
 // console.log(arr);
+
