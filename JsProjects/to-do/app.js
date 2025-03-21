@@ -16,7 +16,6 @@ function renderTasks() {
         editButton.classList.add('edit-btn');
         editButton.onclick = () => editTask(index);
 
-
         // Create delete button
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Delete';
@@ -26,7 +25,6 @@ function renderTasks() {
         li.appendChild(editButton);
         li.appendChild(deleteButton);
         taskList.appendChild(li);
-
     });
 }
 
@@ -42,7 +40,6 @@ function addTask() {
         renderTasks();
     }
 }
-
 
 //Edit a task
 function editTask(index) {

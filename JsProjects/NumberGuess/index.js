@@ -1,8 +1,8 @@
-const userInput = document.querySelector('.user-input')
 const form = document.querySelector('form')
 const result = document.querySelector('.result')
 const allGuess = document.querySelector('.all-guess')
 const submitBtn = document.querySelector('.submit-btn')
+const userInput = document.querySelector('.user-input')
 const startGameBtn = document.querySelector('.start-game')
 
 function a() {
@@ -32,5 +32,4 @@ function a() {
 		randomNumber = Math.round(Math.random() * 100)
 	})
 }
-
 a()

@@ -1,4 +1,4 @@
-// 1 : charAt()
+// // 1 : charAt()
 // let str = "Mumbai";
 // console.log(str.charAt(0));
 

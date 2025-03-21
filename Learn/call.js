@@ -61,10 +61,10 @@
 // console.log(num);
 // console.log(removednum);
 
-let num = [1, 2, 3, 4];
-let removednum = num.shift();
-console.log(num);
-console.log(removednum);
+// let num = [1, 2, 3, 4];
+// let removednum = num.shift();
+// console.log(num);
+// console.log(removednum);
 
 // let num = [1, 2, 3, 4];
 // let unshifts = num.unshift(0)
@@ -192,14 +192,14 @@ console.log(removednum);
 // };
 // car.start();
 
-// let person = {
-//     fname: "aaa",
-//     lname: "zzz",
-//     age: 18
-// };
-// Object.keys(person).forEach(key => {
-//     console.log(`${key} ${person[key]}`);
-// });
+let person = {
+    fname: "aaa",
+    lname: "zzz",
+    age: 18
+};
+Object.keys(person).forEach(key => {
+    console.log(`${key} ${person[key]}`);
+});
 
 
 // const [first, second] = ["apple", 'banana', 'orange'];

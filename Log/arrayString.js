@@ -31,11 +31,10 @@
 
 
 
-
-// let data = [5, 2, 9, 1, 5, 6];
+// let data = [9,7,5,3,1];
 // let temp;
 // function customReverse(data, start, end) {
-//     // console.warn(data)
+//     console.warn(data)
 //     if (start <= end) {
 //         temp = data[start]
 //         data[start] = data[end]
@@ -66,6 +65,7 @@
 // let result = MinMax(data)
 // console.log("Max value is: ",result.max);
 // console.log("Min value is: ",result.min);
+
 
 // const maxmin = (arr) => {
 //     let max = min = arr[0]
@@ -310,7 +310,6 @@
 // console.log("sum of array", sumOfArray(number));
 
 
-
 // function reverseString(str) {
 //     let reversed = ''
 //     for (let i = str.length - 1; i >= 0; i--) {
@@ -322,12 +321,25 @@
 
 
 
-// Greatest Common Divisor(GCD)
-// const gcd = (a, b) => {
+// // Greatest Common Divisor(GCD)
+// const greaterDivisor = (a, b) => {
 //     if (b === 0) return a;
-//     return gcd(b, a % b)
+//     return greaterDivisor(b, a % b)
 // }
-// console.log(gcd(56, 98))
+// console.log(greaterDivisor(579, 98))
 
 
 
+
+
+// for (var i = 1; i <= 3; i++) {
+//     setTimeout(function () {
+//         console.log(i)
+//     }, 1000);
+// }
+
+// for (let i = 1; i <= 3; i++) {
+//     setTimeout(function () {
+//         console.log(i)
+//     }, 1000);
+// }

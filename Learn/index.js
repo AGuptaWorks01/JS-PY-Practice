@@ -154,4 +154,5 @@ const prime = (n) => {
     }
     return 'prime number'
 }
-console.log(prime(10))
+console.log(prime(11))
+

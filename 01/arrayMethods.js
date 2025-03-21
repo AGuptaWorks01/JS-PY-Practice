@@ -1,4 +1,5 @@
 // let arr = [1, 2];
+// console.log(arr.length)
 // console.log(arr.shift());
 // console.log(arr.unshift());
 // console.log(arr);
@@ -22,13 +23,14 @@
 // console.log(result);
 
 
-// let arr = [1, 2, 3,5,8,9];
-// let result = arr.filter(x=> x > 2);
+// let arr = [1, 2, 3, 5, 8, 9];
+// let result = arr.filter(x => x > 2);
 // console.log(result);
+
 
 // let arr = [1, 2, 3];
 // arr.fill(0);
-// // console.log(arr);
+// console.log(arr);
 
 // let arr = [1, 2, 3];
 // console.log(arr.includes(2));

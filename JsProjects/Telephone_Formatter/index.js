@@ -1,6 +1,5 @@
 const input = document.querySelector('input');
 
-
 let previousValue = ''
 let firstThreeNumbers = ''
 
@@ -22,5 +21,4 @@ input.addEventListener('input', (e) => {
 		input.value = firstThreeNumbers
 	}
 	previousValue = inputValue
-
 });
