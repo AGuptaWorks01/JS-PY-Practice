@@ -217,7 +217,6 @@
 // console.log(data3);
 
 
-
 // let data1 = [1, 3, 5, 7, 9, 11];
 // let data2 = [2, 4, 6, 8, 10, 13, 15];
 // let data3 = [];
@@ -275,7 +274,6 @@
 
 
 
-
 // // finding factorial
 // const fact = (item) => {
 //     if (item == 0) {
@@ -288,7 +286,6 @@
 
 
 
-
 // let array = [1, 2, 3, 4, 5]
 // let sum1 = 0
 // for (let i = 0; i < array.length; i++) {
@@ -298,8 +295,8 @@
 
 
 
-// ---------------    iterative approach
-// function sumOfArray(arr) {
+// // ---------------    iterative approach
+// const sumOfArray = (arr) => {
 //     let sum = 0
 //     for (let i = 0; i < arr.length; i++) {
 //         sum += arr[i]
@@ -329,9 +326,6 @@
 // console.log(greaterDivisor(579, 98))
 
 
-
-
-
 // for (var i = 1; i <= 3; i++) {
 //     setTimeout(function () {
 //         console.log(i)
@@ -343,3 +337,4 @@
 //         console.log(i)
 //     }, 1000);
 // }
+

@@ -4,7 +4,6 @@ const array = [10, 20, 30, 40, 50];
 // Traditionally, for loop ka use array ke elements ko access karne ke liye hota hai.
 
 // for (let i = 0; i < array.length; i++) {
-// 	debugger
 // 	const element = array[i];
 // 	console.log(element);
 // }
@@ -17,11 +16,12 @@ const array = [10, 20, 30, 40, 50];
 // }
 
 
+
 // 3. ForEach Method
 // forEach method ek callback function ke zariye array ke har element par iterate karta hai.
 
-// array.forEach((value, index) => {
-// 	console.log(`Index: ${index}, Value${value} `);
+// array.forEach((value) => {
+// 	console.log(value);
 // });
 
 
@@ -50,7 +50,7 @@ const array = [10, 20, 30, 40, 50];
 // 9. Reduce Method
 // reduce method array ke elements ko ek hi value mein reduce karta hai.
 
-// const sum = array.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
+// const sum = array.reduce((a, b) => a + b, 0)
 // console.log(sum);
 
 

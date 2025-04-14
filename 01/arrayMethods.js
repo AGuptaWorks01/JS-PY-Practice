@@ -53,3 +53,10 @@
 // let arr = Array.from(str);
 // console.log(arr);
 
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.toString())
+// console.log(fruits.at(2))
+
+

@@ -85,6 +85,9 @@
 // let arr = Array.from(name);
 // console.log(arr);
 
+// let a = new Set([1,2, 2, 3, 4])
+// let b = Array.from(a)
+// console.log(b)
 
 // let num = [1, 2, 3, 4];
 // for (let i in num) {
@@ -98,7 +101,7 @@
 
 // let arr = [1, 2, 3, 4];
 // let a = arr.map((value) => {
-//     console.log(value);
+//     // console.log(value);
 //     return value + 1
 // })
 // console.log(a);
@@ -142,8 +145,8 @@
 // console.log(n);
 
 
-let arr = [1, 2, 3, 9];
-let n = arr.reduce((x1, x2) => {
-    return x1 * x2
-})
-console.log(n);
+// let arr = [1, 2, 3, 9];
+// let n = arr.reduce((x1, x2) => {
+//     return x1 * x2
+// })
+// console.log(n);
