@@ -116,7 +116,7 @@
 // }
 // pascalTriangle(5);
 
-// 09_zigzag_pattern.js
+// // 09_zigzag_pattern.js
 function zigZag(n) {
     for (let i = 1; i <= 3; i++) {
         let row = '';
@@ -136,29 +136,29 @@ function zigZag(n) {
 }
 zigZag(15);
 
+// // 10_spiral_matrix.js
 
-// 10_spiral_matrix.js
-function spiralMatrix(n) {
-    let matrix = Array.from({ length: n }, () => Array(n).fill(0));
-    let val = 1, top = 0, bottom = n - 1, left = 0, right = n - 1;
+// function spiralMatrix(n) {
+//     let matrix = Array.from({ length: n }, () => Array(n).fill(0));
+//     let val = 1, top = 0, bottom = n - 1, left = 0, right = n - 1;
 
-    while (val <= n * n) {
-        for (let i = left; i <= right; i++) matrix[top][i] = val++;
-        top++;
-        for (let i = top; i <= bottom; i++) matrix[i][right] = val++;
-        right--;
-        for (let i = right; i >= left; i--) matrix[bottom][i] = val++;
-        bottom--;
-        for (let i = bottom; i >= top; i--) matrix[i][left] = val++;
-        left++;
-    }
+//     while (val <= n * n) {
+//         for (let i = left; i <= right; i++) matrix[top][i] = val++;
+//         top++;
+//         for (let i = top; i <= bottom; i++) matrix[i][right] = val++;
+//         right--;
+//         for (let i = right; i >= left; i--) matrix[bottom][i] = val++;
+//         bottom--;
+//         for (let i = bottom; i >= top; i--) matrix[i][left] = val++;
+//         left++;
+//     }
 
-    for (let i = 0; i < n; i++) {
-        let row = '';
-        for (let j = 0; j < n; j++) {
-            row += matrix[i][j].toString().padStart(3, ' ') + ' ';
-        }
-        console.log(row);
-    }
-}
-spiralMatrix(4);
+//     for (let i = 0; i < n; i++) {
+//         let row = '';
+//         for (let j = 0; j < n; j++) {
+//             row += matrix[i][j].toString().padStart(3, ' ') + ' ';
+//         }
+//         console.log(row);
+//     }
+// }
+// spiralMatrix(4);

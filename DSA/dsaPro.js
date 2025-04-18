@@ -25,7 +25,7 @@
 //     }
 //     return arr
 // }
-// let arr = [56, 89, 45, 42, 0]
+// let arr = [56, 89, 45, 42,
 // ArrayReverse(arr)
 // console.log(arr);
 
