@@ -147,12 +147,21 @@
 // console.log(checkPrime(4))
 
 
-const prime = (n) => {
-    if (n <= 1) return 'Number is not prime'
-    for (let i = 2; i <= n / 2; i++) {
-        if (n % i === 0) return 'not a prime number'
-    }
-    return 'prime number'
-}
-console.log(prime(11))
+// const prime = (n) => {
+//     if (n <= 1) return 'Number is not prime'
+//     for (let i = 2; i <= n / 2; i++) {
+//         if (n % i === 0) return 'not a prime number'
+//     }
+//     return 'prime number'
+// }
+// console.log(prime(11))
 
+
+const isPrime = (n) => {
+    if (n <= 1) return "Number is not a prime";
+    for (let i = 2; i < n/2; i++) {
+        if (n % i === 0) return "not a prime number";        
+    }
+    return "Prime Number"
+} 
+console.log(isPrime(1));

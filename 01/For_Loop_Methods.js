@@ -1,4 +1,4 @@
-const array = [10, 20, 30, 40, 50];
+const array = [10, 20, 30, 40, 50,1];
 
 // 1. For Loop
 // Traditionally, for loop ka use array ke elements ko access karne ke liye hota hai.
@@ -50,7 +50,7 @@ const array = [10, 20, 30, 40, 50];
 // 9. Reduce Method
 // reduce method array ke elements ko ek hi value mein reduce karta hai.
 
-// const sum = array.reduce((a, b) => a + b, 0)
+// const sum = array.reduce((a, b) => a + b)
 // console.log(sum);
 
 
@@ -146,3 +146,6 @@ const array = [10, 20, 30, 40, 50];
 // }
 
 
+
+let myArr = Array.from("Hello")
+console.log(myArr);

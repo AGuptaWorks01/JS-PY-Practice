@@ -60,3 +60,9 @@
 // console.log(fruits.at(2))
 
 
+
+// console.log(Array.isArray([1,2]));
+// console.log(typeof[1,2]);
+
+// const arr = [1, [2, 3], [4]]
+// console.log(arr.flat());

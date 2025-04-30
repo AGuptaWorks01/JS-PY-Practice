@@ -5,7 +5,6 @@
 // console.log(isEven(9))
 // console.log(isEven(8))
 
-
 // //  Formatting Numbers with Units (K, M, B) in JavaScript
 // function formatNumber(num) {
 //     return num >= 1e9 ? (num / 1e9).toFixed(1) + "B" :
@@ -15,7 +14,6 @@
 // console.log(formatNumber(21000))
 // console.log(formatNumber(23000000))
 // console.log(formatNumber(29000000000))
-
 
 // // OTP Generator
 // const getOtp = (length = 6) => {

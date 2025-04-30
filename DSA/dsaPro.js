@@ -10,26 +10,22 @@
 // }
 // console.log(SmallestOfThree(30,1,9));
 
-
-
-// //	Revising a array
+	// Revising a array
 // const ArrayReverse = (arr) => {
-//     let start = 0
-//     let end = arr.length - 1
-//     while (start < end) {
-//         let temp = arr[start]
-//         arr[start] = arr[end]
-//         arr[end] = temp
-//         start++
-//         end--
-//     }
-//     return arr
-// }
-// let arr = [56, 89, 45, 42,
-// ArrayReverse(arr)
+//   let start = 0;
+//   let end = arr.length - 1;
+//   while (start < end) {
+//     let temp = arr[start];
+//     arr[start] = arr[end];
+//     arr[end] = temp;
+//     start++;
+//     end--;
+//   }
+//   return arr;
+// };
+// let arr = [56, 89, 45, 42];
+// ArrayReverse(arr);
 // console.log(arr);
-
-
 
 // let data = [9,7,5,3,1];
 // let temp;
@@ -44,9 +40,6 @@
 // }
 // customReverse(data, 0, data.length - 1)
 // console.log(data);
-
-
-
 
 // const MinMax = (arr) => {
 //     let max = arr[0]
@@ -66,7 +59,6 @@
 // console.log("Max value is: ",result.max);
 // console.log("Min value is: ",result.min);
 
-
 // const maxmin = (arr) => {
 //     let max = min = arr[0]
 //     for (let i = 0; i < arr.length; i++) {
@@ -83,7 +75,6 @@
 // let rst = maxmin(datas)
 // console.log(rst.max)
 // console.log(rst.min)
-
 
 // function rotateArray(arr, k) {
 // 	let n = arr.length;
@@ -109,8 +100,6 @@
 // let rotatedArray = rotateArray(arr, k)
 // console.log(rotatedArray);
 
-
-
 // function findRepeatedCharacters(str) {
 //     let repeatedChars = ''
 //     let counts = ''
@@ -132,8 +121,6 @@
 // let result = findRepeatedCharacters(inputString)
 // console.log("Repeated Characters:", result.repeatedChars, "Frequency of the characters is:", result.counts);
 
-
-
 // // // character repated
 // let str = 'hello peter hooo'
 // let srtObj = {}
@@ -152,8 +139,6 @@
 // console.log(`${maxKey}:${srtObj[maxKey]}`);
 // console.log(srtObj);
 
-
-
 // let str = 'anurag'
 // let freq = {}
 // let count = ''
@@ -171,9 +156,6 @@
 //         console.log(`${char}: ${freq[char]}`)
 // }
 // console.log(freq);
-
-
-
 
 // let str = "anurag gupta";
 // let freq = {};
@@ -203,8 +185,6 @@
 // // Step 4: Log the result
 // console.log(`Most repeated character(s): ${mostRepeatedChars.join(', ')} (appears ${maxCount} times)`);
 
-
-
 // let data = [1, 2, 3, 4, 5]
 // let data1 = [7, 8, 9, 10]
 // let data3 = []
@@ -215,7 +195,6 @@
 //     data3[data.length + i] = data1[i]
 // }
 // console.log(data3);
-
 
 // let data1 = [1, 3, 5, 7, 9, 11];
 // let data2 = [2, 4, 6, 8, 10, 13, 15];
@@ -247,8 +226,6 @@
 // }
 // console.log(data3.join(', '))
 
-
-
 // // Using bubbleSort shorting Array
 // let bub = [89, 13, 56, 4, 26, 9]
 // for (let i = 0; i < bub.length; i++) {
@@ -262,8 +239,6 @@
 // }
 // console.log(bub);
 
-
-
 // // reversed a string
 // let strs = 'anurag'
 // let revesed = ''
@@ -271,8 +246,6 @@
 // 	revesed += strs[i]
 // }
 // console.log(revesed);
-
-
 
 // // finding factorial
 // const fact = (item) => {
@@ -284,16 +257,12 @@
 // let data = 5
 // console.log(fact(data));
 
-
-
 // let array = [1, 2, 3, 4, 5]
 // let sum1 = 0
 // for (let i = 0; i < array.length; i++) {
 //     sum1 += array[i]
 // }
 // console.log(sum1);
-
-
 
 // // ---------------    iterative approach
 // const sumOfArray = (arr) => {
@@ -306,7 +275,6 @@
 // const number = [1, 2, 3, 4, 5]
 // console.log("sum of array", sumOfArray(number));
 
-
 // function reverseString(str) {
 //     let reversed = ''
 //     for (let i = str.length - 1; i >= 0; i--) {
@@ -316,15 +284,12 @@
 // }
 // console.log(reverseString('anurag'));
 
-
-
 // // Greatest Common Divisor(GCD)
 // const greaterDivisor = (a, b) => {
 //     if (b === 0) return a;
 //     return greaterDivisor(b, a % b)
 // }
 // console.log(greaterDivisor(579, 98))
-
 
 // for (var i = 1; i <= 3; i++) {
 //     setTimeout(function () {
@@ -337,4 +302,3 @@
 //         console.log(i)
 //     }, 1000);
 // }
-
