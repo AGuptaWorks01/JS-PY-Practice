@@ -28,7 +28,9 @@
 //     age: 30,
 //     city: "New York"
 // }
-// console.log(JSON.stringify(person));
+// console.log( JSON.stringify( person ) );
+// console.log(Object.values(person));
+
 
 
 // 'use strick'

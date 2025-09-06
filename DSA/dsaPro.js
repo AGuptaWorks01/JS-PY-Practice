@@ -10,7 +10,7 @@
 // }
 // console.log(SmallestOfThree(30,1,9));
 
-	// Revising a array
+// Revising a array
 // const ArrayReverse = (arr) => {
 //   let start = 0;
 //   let end = arr.length - 1;
@@ -30,7 +30,7 @@
 // let data = [9,7,5,3,1];
 // let temp;
 // function customReverse(data, start, end) {
-//     console.warn(data)
+//     // console.warn(data)
 //     if (start <= end) {
 //         temp = data[start]
 //         data[start] = data[end]
@@ -75,6 +75,7 @@
 // let rst = maxmin(datas)
 // console.log(rst.max)
 // console.log(rst.min)
+
 
 // function rotateArray(arr, k) {
 // 	let n = arr.length;

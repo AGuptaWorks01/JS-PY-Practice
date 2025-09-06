@@ -54,11 +54,9 @@
 // console.log(arr);
 
 
-
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(fruits.toString())
 // console.log(fruits.at(2))
-
 
 
 // console.log(Array.isArray([1,2]));

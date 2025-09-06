@@ -6,13 +6,6 @@
 // console.log('Server running at http://127.0.0.1:8081/');
 
 
-// const http = require('http')
-// http.createServer(function (request, response) {
-//     response.writeHead(200, { "Content-Type": "text/plain" })
-//     response.end("Server Run hogya...")
-// }).listen(3001)
-// console.log("Server on hai port: ",3001);
-
 // class Database {
 //     constructor() {
 //         if (!Database.instance) {

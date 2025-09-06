@@ -42,10 +42,11 @@
 
 // var a = 10;
 // let b = 20;
-// if (b) {
-//     console.log(a);
+// if ( b )
+//     {
+//     console.log("a",a);
 // }
-// console.log(b);
+// console.log("b",b);
 
 // console.log(a);
 // var a = 5;
