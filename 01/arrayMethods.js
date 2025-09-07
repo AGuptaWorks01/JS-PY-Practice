@@ -1,7 +1,7 @@
 // let arr = [1, 2];
-// console.log(arr.length)
-// console.log(arr.shift());
-// console.log(arr.unshift());
+// console.log("===Length==>",arr.length)
+// console.log("===Shift===>",arr.shift());
+// console.log("===unShift==>", arr.unshift());
 // console.log(arr);
 
 
@@ -19,8 +19,8 @@
 
 
 // let arr = [1, 2, 3];
-// let result = arr.map(x=> x *2);
-// console.log(result);
+// let result = arr.map(x => x * 2);
+// // console.log(result);
 
 
 // let arr = [1, 2, 3, 5, 8, 9];
@@ -29,7 +29,7 @@
 
 
 // let arr = [1, 2, 3];
-// arr.fill(0);
+// arr.fill(0,1);
 // console.log(arr);
 
 // let arr = [1, 2, 3];
@@ -66,3 +66,9 @@
 
 // const arr = [1, [2, 3], [4]]
 // console.log(arr.flat());
+
+
+const arr = ["Abc","Xyz","a2z"];
+let arrs = arr.splice(1,1,"Splice")
+console.log(arrs);
+console.log(arr);

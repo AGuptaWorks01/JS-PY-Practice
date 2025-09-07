@@ -1,11 +1,11 @@
-const array = [10, 20, 30, 40, 50,1];
+const array = [10, 20, 30, 40, 50];
 
 // 1. For Loop
 // Traditionally, for loop ka use array ke elements ko access karne ke liye hota hai.
 
 // for (let i = 0; i < array.length; i++) {
 // 	const element = array[i];
-// 	console.log(element);
+//     console.log(array[i]);
 // }
 
 // 2. For...of Loop
@@ -133,19 +133,19 @@ const array = [10, 20, 30, 40, 50,1];
 // 19. Nested Array Traversing
 // Multi-dimensional arrays ke liye nested loops ka use hota hai.
 
-// const nestedArr = [
-// 	[1, 2, 3],
-// 	[4, 5, 6],
-// 	[7, 8, 9]
-// ];
+const nestedArr = [
+	[1, 2, 3],
+	[4, 5, 6],
+	[7, 8, 9]
+];
 
-// for(const row of nestedArr){
-// 	for(const value of row){
-// 		console.log(value);
-// 	}
-// }
+for(const row of nestedArr){
+	for(const value of row){
+		console.log(value);
+	}
+}
 
 
 
-let myArr = Array.from("Hello")
-console.log(myArr);
+// let myArr = Array.from("Hello")
+// console.log(myArr);

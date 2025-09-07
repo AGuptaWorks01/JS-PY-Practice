@@ -164,4 +164,4 @@ const isPrime = (n) => {
     }
     return "Prime Number"
 } 
-console.log(isPrime(1));
+console.log(isPrime(11));

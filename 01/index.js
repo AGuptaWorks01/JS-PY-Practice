@@ -55,7 +55,6 @@
 
 // let gatway = {location:'Colaba', height: 25}
 // let { location, height} = gatway;
-
 // console.log(location);
 
 // let calculateFare = (distance = 1 ) => distance * 10;

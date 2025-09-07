@@ -27,10 +27,15 @@
 
 
 
-// let array = [1, 2, 3]
-// for (let i = 0; i < array.length; i++) {
-//     console.log(array[i])
-// }
+let array = [1, 2, 3]
+for (let i = 0; i < array.length; i++) {
+    console.log(array[i])
+}
+
+
+// array.forEach(el => {
+//     console.log(el);
+// });
 
 // function generateToken() {
 //     return `${Math.random().toString(36).substring(2)}`;

@@ -4,6 +4,11 @@
 // }
 // revInt(12345)
 
+// function isr(a) {
+//     return a==a.toString().split('').reverse().join('')
+// }
+// console.log(isr(123));
+
 
 // let a = prompt('Hello ')
 // a = Number.parseInt(a)
@@ -95,3 +100,11 @@
 // const result = getSum([-5, 4, -3, -2, 0, 2, 3, 4, 6, 8])
 // console.log(result);
 
+
+
+
+
+// function fact(f) {
+//  return f === 0 ? 1 : f * fact(f-1)   
+// }
+// console.log(fact(5));

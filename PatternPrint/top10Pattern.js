@@ -117,24 +117,24 @@
 // pascalTriangle(5);
 
 // // 09_zigzag_pattern.js
-function zigZag(n) {
-    for (let i = 1; i <= 3; i++) {
-        let row = '';
-        for (let j = 1; j <= n; j++) {
-            if (
-                (i === 1 && j % 4 === 2) ||
-                (i === 2 && j % 2 === 1) ||
-                (i === 3 && j % 4 === 0)
-            ) {
-                row += '*';
-            } else {
-                row += ' ';
-            }
-        }
-        console.log(row);
-    }
-}
-zigZag(15);
+// function zigZag(n) {
+//     for (let i = 1; i <= 3; i++) {
+//         let row = '';
+//         for (let j = 1; j <= n; j++) {
+//             if (
+//                 (i === 1 && j % 4 === 2) ||
+//                 (i === 2 && j % 2 === 1) ||
+//                 (i === 3 && j % 4 === 0)
+//             ) {
+//                 row += '*';
+//             } else {
+//                 row += ' ';
+//             }
+//         }
+//         console.log(row);
+//     }
+// }
+// zigZag(15);
 
 // // 10_spiral_matrix.js
 

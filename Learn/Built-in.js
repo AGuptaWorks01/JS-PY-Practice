@@ -244,6 +244,11 @@
 // }
 
 
+let a = "anurag";
+for (let i of a) {
+    console.log(i);    
+}
+
 // let std = {
 //     name: "nha",
 //     age: 12

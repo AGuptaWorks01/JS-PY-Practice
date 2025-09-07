@@ -1,14 +1,10 @@
 function outerFunction(){
-	debugger
 	let outerVariable = "main outer function se hoon";
-
 	function innerFunction(){
-		debugger
 		console.log(outerVariable);
-	}
-	debugger
+	}	
 	return innerFunction;
-}debugger
+}
 
 const closureFunction =  outerFunction();
 closureFunction();

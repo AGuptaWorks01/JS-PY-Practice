@@ -229,24 +229,24 @@
 // crossPattern(7)
 
 
-// function zigZigPattern(n) {
-//     console.log(" This is Zig-Zag Pattern");
-//     for (let i = 1; i <= 3; i++) {
-//         let row = ""
-//         for (let j = 0; j <= n; j++) {
-//             if (
-//                 (i === 1 && (j % 4 === 2)) ||
-//                 (i === 2 && (j % 2 === 1)) ||
-//                 (i === 3 && (j % 4 === 0))
-//             ) {
-//                 row += "*"
-//             } else {
-//                 row += " "
-//             }
-//         }
-//         console.log(row);
-//     }
-// }
+function zigZigPattern(n) {
+    console.log(" This is Zig-Zag Pattern");
+    for (let i = 1; i <= 3; i++) {
+        let row = ""
+        for (let j = 0; j <= n; j++) {
+            if (
+                (i === 1 && (j % 4 === 2)) ||
+                (i === 2 && (j % 2 === 1)) ||
+                (i === 3 && (j % 4 === 0))
+            ) {
+                row += "*"
+            } else {
+                row += " "
+            }
+        }
+        console.log(row);
+    }
+}
 // zigZigPattern(15)
 
 
@@ -265,29 +265,29 @@
 // }
 // hollowNumberSquare(5)
 
-function hollowCenteredNumberPyramid(n) {
-    for (let i = 1; i <= n; i++) {
-        let row = '';
-        for (let s = 1; s <= n - i; s++) {
-            row += '  ';
-        }
-        row += '1';
-        if (i > 1 && i < n) {
-            for (let k = 1; k <= 2 * (i - 1) - 1; k++) {
-                row += '  ';
-            }
-            row += i;
-        }
-        if (i === n) {
-            row = '';
-            for (let j = 1; j <= n; j++) {
-                row += j + ' ';
-            }
-            for (let j = n - 1; j >= 1; j--) {
-                row += j + ' ';
-            }
-        }
-        console.log(row);
-    }
-}
-hollowCenteredNumberPyramid(5);
+// function hollowCenteredNumberPyramid(n) {
+//     for (let i = 1; i <= n; i++) {
+//         let row = '';
+//         for (let s = 1; s <= n - i; s++) {
+//             row += '  ';
+//         }
+//         row += '1';
+//         if (i > 1 && i < n) {
+//             for (let k = 1; k <= 2 * (i - 1) - 1; k++) {
+//                 row += '  ';
+//             }
+//             row += i;
+//         }
+//         if (i === n) {
+//             row = '';
+//             for (let j = 1; j <= n; j++) {
+//                 row += j + ' ';
+//             }
+//             for (let j = n - 1; j >= 1; j--) {
+//                 row += j + ' ';
+//             }
+//         }
+//         console.log(row);
+//     }
+// }
+// hollowCenteredNumberPyramid(5);

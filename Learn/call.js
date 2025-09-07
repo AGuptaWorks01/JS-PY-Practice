@@ -192,14 +192,14 @@
 // };
 // car.start();
 
-let person = {
-    fname: "aaa",
-    lname: "zzz",
-    age: 18
-};
-Object.keys(person).forEach(key => {
-    console.log(`${key} ${person[key]}`);
-});
+// let person = {
+//     fname: "aaa",
+//     lname: "zzz",
+//     age: 18
+// };
+// Object.keys(person).forEach(key => {
+//     console.log(`${key} ${person[key]}`);
+// });
 
 
 // const [first, second] = ["apple", 'banana', 'orange'];
