@@ -51,9 +51,39 @@
 // console.log(res);
 
 
-let arr = [1, 2, 3, 4, 5];
-let res = [];
-for (let i = arr.length - 1, j = 0; i >= 0; i--, j++) {
-  res[j] = arr[i];
-}
-console.log(res);
+// let arr = [1, 2, 3, 4, 5];
+// let res = [];
+// for (let i = arr.length - 1, j = 0; i >= 0; i--, j++) {
+//   res[j] = arr[i];
+// }
+// console.log(res);
+
+
+// function flattenArrayModern(arr) {
+//   return arr.flat(Infinity);
+// }
+// const nestedArr = [1, [2, [3, 4]], 5, [6, 7]];
+// console.log(flattenArrayModern(nestedArr)); // Output: [1, 2, 3, 4, 5, 6, 7]
+
+
+// function flattenArrayRecursive(arr) {
+//   let flattened = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     const element = arr[i];
+
+//     if (Array.isArray(element)) {
+//       // If the element is an array, recursively call the function
+//       flattened = flattened.concat(flattenArrayRecursive(element));
+//     } else {
+//       // If it's not an array, just push it to the result
+//       flattened.push(element);
+//     }
+//   }
+
+//   return flattened;
+// }
+
+// // Example usage:
+// const nestedArr = [1, [2, [3, 4]], 5, [6, 7]];
+// console.log(flattenArrayRecursive(nestedArr)); // Output: [1, 2, 3, 4, 5, 6, 7]
