@@ -1,14 +1,14 @@
-// function start(n) {
-//     for (let i = 1; i <= n; i++) {
-//         let data = ""
-//         for (let j = 1; j <= i; j++) {
-//             data += "*"
-//         }
-//         console.log(data);
-//     }
-// }
-// start(5)
-// console.log()
+function start(n) {
+    for (let i = 1; i <= n; i++) {
+        let data = ""
+        for (let j = 1; j <= i; j++) {
+            data += "*"
+        }
+        console.log(data);
+    }
+}
+start(5)
+console.log()
 
 // function SquareStar(n) {
 //     for (let i = 1; i <= n; i++) {
