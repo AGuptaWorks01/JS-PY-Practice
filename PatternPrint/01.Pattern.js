@@ -11,7 +11,7 @@
 // console.log()
 
 // function SquareStar(n) {
-//     for (let i = 1; i <= n; i++) {
+//   f  or (let i = 1; i <= n; i++) {
 //         let data = ""
 //         for (let j = 1; j <= n; j++) {
 //             data += " *"
@@ -42,6 +42,7 @@
 //   }
 // }
 // RightAngled(5);
+
 
 // Diamond Pattern
 // function Diamond_Pattern(n) {
@@ -259,35 +260,46 @@ function zigZigPattern(n) {
 //             } else {
 //                 row += "  "
 //             }
-//         }
+//         } 
 //         console.log(row);
 //     }
 // }
 // hollowNumberSquare(5)
 
-// function hollowCenteredNumberPyramid(n) {
-//     for (let i = 1; i <= n; i++) {
+// function hollowCenteredNumberPyramid ( n ) {
+//     for ( let i = 1; i <= n; i++ )
+//     {
 //         let row = '';
-//         for (let s = 1; s <= n - i; s++) {
+//         for ( let s = 1; s <= n - i; s++ )
+//         {
 //             row += '  ';
 //         }
 //         row += '1';
-//         if (i > 1 && i < n) {
-//             for (let k = 1; k <= 2 * (i - 1) - 1; k++) {
+//         if ( i > 1 && i < n )
+//         {
+//             for ( let k = 1; k <= 2 * ( i - 1 ) - 1; k++ )
+//             {
 //                 row += '  ';
 //             }
 //             row += i;
 //         }
-//         if (i === n) {
+//         if ( i === n )
+//         {
 //             row = '';
-//             for (let j = 1; j <= n; j++) {
+//             for ( let j = 1; j <= n; j++ )
+//             {
 //                 row += j + ' ';
 //             }
-//             for (let j = n - 1; j >= 1; j--) {
+//             for ( let j = n - 1; j >= 1; j-- )
+//             {
 //                 row += j + ' ';
 //             }
 //         }
-//         console.log(row);
+//         console.log( row );
 //     }
 // }
-// hollowCenteredNumberPyramid(5);
+// hollowCenteredNumberPyramid( 5 );
+
+
+
+

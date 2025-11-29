@@ -66,6 +66,16 @@
 // let str = "Mümbai";
 // console.log(str.normalize());
 
+
+// let a = "Mümbai"; // ü = single character
+// let b = "Mümbai"; // u + ¨ = two characters (looks same!)
+
+// console.log(a === b); // ❌ false
+
+// // Normalize both:
+// console.log(a.normalize() === b.normalize()); // ✅ true
+
+
 // let str = String.raw`'Hello\nMumbai'`;
 // console.log(str);
 

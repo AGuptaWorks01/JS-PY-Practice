@@ -8,13 +8,13 @@ const array = [10, 20, 30, 40, 50];
 //     console.log(array[i]);
 // }
 
+
 // 2. For...of Loop
 // for...of loop se array ke elements ko directly access karte hain.
 
 // for (const elm of array) {
 // 	console.log(elm);
 // }
-
 
 
 // 3. ForEach Method
@@ -79,7 +79,7 @@ const array = [10, 20, 30, 40, 50];
 // 13. FindIndex Method
 // findIndex method array ka us element ka index return karta hai jo condition satisfy karta hai.
 
-// const foundIndex = array.findIndex((value) => value > 25);
+// const foundIndex = array.findIndex((value) => value > 15);
 // console.log(foundIndex);
 
 
@@ -119,7 +119,6 @@ const array = [10, 20, 30, 40, 50];
 // }
 
 
-
 // 18. Recursion
 // Recursion ka use karke bhi array traverse kar sakte hain.
 
@@ -133,17 +132,18 @@ const array = [10, 20, 30, 40, 50];
 // 19. Nested Array Traversing
 // Multi-dimensional arrays ke liye nested loops ka use hota hai.
 
-const nestedArr = [
-	[1, 2, 3],
-	[4, 5, 6],
-	[7, 8, 9]
-];
+// const nestedArr = [
+// 	[1, 2, 3],
+// 	[4, 5, 6],
+// 	[7, 8, 9]
+// ];
 
-for(const row of nestedArr){
-	for(const value of row){
-		console.log(value);
-	}
-}
+// for(const row of nestedArr){
+// 	for(const value of row){
+// 		console.log(value);
+// 	}
+// 	// console.log(row);
+// }
 
 
 

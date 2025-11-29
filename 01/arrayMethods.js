@@ -20,7 +20,7 @@
 
 // let arr = [1, 2, 3];
 // let result = arr.map(x => x * 2);
-// // console.log(result);
+// console.log(result);
 
 
 // let arr = [1, 2, 3, 5, 8, 9];
@@ -54,11 +54,9 @@
 // console.log(arr);
 
 
-
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(fruits.toString())
 // console.log(fruits.at(2))
-
 
 
 // console.log(Array.isArray([1,2]));
@@ -68,7 +66,12 @@
 // console.log(arr.flat());
 
 
-const arr = ["Abc","Xyz","a2z"];
-let arrs = arr.splice(1,1,"Splice")
-console.log(arrs);
-console.log(arr);
+// const arr = ["Abc","Xyz","a2z"];
+// let arrs = arr.splice(1,1,"Splice")
+// console.log(arrs);
+// console.log(arr);
+
+
+// let a = ["a","b","c"];
+// console.log(a.splice(1,1,"Baccha"))
+// console.log(a);

@@ -25,20 +25,43 @@
 // }
 // console.log("OTP:", getOtp())
 
-
-
-let array = [1, 2, 3]
-for (let i = 0; i < array.length; i++) {
-    console.log(array[i])
-}
-
-
-// array.forEach(el => {
-//     console.log(el);
-// });
+// let array = [1, 2, 3]
+// for (let i = 0; i < array.length; i++) {
+//     console.log(array[i])
+// }
 
 // function generateToken() {
 //     return `${Math.random().toString(36).substring(2)}`;
 // }
 // const token = generateToken()
 // console.log("Generated Token:", token)
+
+// const token = () => {
+//     return `${Math.random().toString(36).substring(2)}`
+// }
+// console.log("Generated Token:", token());
+
+
+// let arr = [1, 2, 3, 4, 5];
+// let res =[];
+// for (let i = arr.length - 1; j = 0; i >= 0 ; i--, j++) {
+//     //   res.push(arr[i]);
+//     res[j] += arr[i]
+// }
+// console.log(res);
+
+
+// let arr = [1, 2, 3, 4, 5];
+// let res = [];
+// for (let i = arr.length - 1, j = 0; i >= 0; i--, j++) {
+//   res[j] = arr[i];
+// }
+// console.log(res);
+
+// // let arr = [1,2,3,4]
+// let arr = "1,2,3,4"
+// let res = ''
+// for (let i = arr.length - 1; i>=0; i--) {
+//   res += arr[i];
+// }
+// console.log(res)

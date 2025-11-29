@@ -1,8 +1,8 @@
-let person = {
-    name: "John",
-    age: 30,
-    city: "New York"
-};
+// let person = {
+//     name: "John",
+//     age: 30,
+//     city: "New York"
+// };
 // console.log(Object.keys(person));
 // console.log(Object.values(person))
 // console.log(Object.entries(person))
@@ -42,10 +42,11 @@ let person = {
 
 // var a = 10;
 // let b = 20;
-// if (b) {
-//     console.log(a);
+// if ( b )
+//     {
+//     console.log("a",a);
 // }
-// console.log(b);
+// console.log("b",b);
 
 // console.log(a);
 // var a = 5;

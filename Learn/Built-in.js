@@ -46,7 +46,6 @@
 // console.log(items);
 
 
-
 // const myGirls = ["Cecilie", "Lone"];
 // const myBoys = ["Emil", "Tobias", "Linus"];
 // const myChildren = myGirls.concat(myBoys);
@@ -244,10 +243,10 @@
 // }
 
 
-let a = "anurag";
-for (let i of a) {
-    console.log(i);    
-}
+// let a = "anurag";
+// for (let i of a) {
+//     console.log(i);    
+// }
 
 // let std = {
 //     name: "nha",
@@ -266,8 +265,3 @@ for (let i of a) {
 //         console.log("odd")
 //     }
 // }
-
-
-
-
-

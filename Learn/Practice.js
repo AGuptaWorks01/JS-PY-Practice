@@ -24,7 +24,6 @@
 // }
 // console.log(a);
 
-
 // const day = 2;
 // switch (day) {
 // 	case 1:
@@ -50,7 +49,6 @@
 // 		break
 // }
 
-
 // const days = ["Mon", "Tues", "Wed", "Thur", "Fri", "Sat", "Sun"];
 // const day = 5;
 // for (let i = 0; i < days.length; i++) {
@@ -59,7 +57,6 @@
 // 		break
 // 	}
 // }
-
 
 // let number = prompt("enter a number")
 // num = Number.parseInt(number)
@@ -72,12 +69,10 @@
 // 	("Number is not divisible by 2 and 3")
 // }
 
-
 // function factorial(n) {
 // 	return n === 0 ? 1 : n * factorial(n - 1)
 // }
 // console.log(factorial(5));
-
 
 // a = 10;
 // b = 20;
@@ -85,7 +80,6 @@
 // a = b + a // 10 + 10 = 20
 // console.log("the swap value is A value", a);
 // console.log("the swap value is B value", b);
-
 
 // function getSum(array) {
 //     for (let i = 0; i < array.length; i++) {
@@ -102,9 +96,16 @@
 
 
 
-
-
-// function fact(f) {
-//  return f === 0 ? 1 : f * fact(f-1)   
-// }
-// console.log(fact(5));
+// const isPalindrome = (str) => {
+//   let start = 0,
+//     end = str.length - 1;
+//     console.log(end);
+//   while (start < end) {
+//     if (str[start] !== str[end]) return false;
+//     start++;
+//     end--;
+//   }
+//   return true;
+// };
+// console.log(isPalindrome("madam")); // true
+// console.log(isPalindrome("hello")); // false
