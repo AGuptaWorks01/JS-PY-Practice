@@ -1,0 +1,358 @@
+// function sameFrequency(num1, num2) {
+//     let strNum1 = num1.toString();
+//     let strNum2 = num2.toString();
+//     if (strNum1.length !== strNum2.length) return false;
+//     let countNum1 = {}
+//     let countNum2 = {}
+//     for (let i = 0; i < strNum1.length; i++) {
+//         countNum1[strNum1[i]] = (countNum1[strNum1[i]] || 0) + 1
+//     }
+//     for (let j = 0; j < strNum1.length; j++) {
+//         countNum2[strNum2[j]] = (countNum2[strNum2[j]] || 0) + 1
+//     }
+//     for (let key in countNum1) {
+//         if (countNum1[key] !== countNum2[key]) return false;
+//     }
+//     return true;
+
+// }
+// console.log(sameFrequency(123, 321));
+
+
+
+//  // ================= areThereDuplicates Solution (Frequency Counter)
+
+// function areThereDuplicates() {
+//     let collection = {};
+//     for (const val in arguments) {
+//         collection[arguments[val]] = (collection[arguments[val]] || 0) + 1
+//     }
+//     for (const key in collection) {
+//         if (collection[key] > 1) return true;
+//     }
+//     return false;
+// }
+// console.log(areThereDuplicates(1,2,3,1));
+
+
+
+
+// // ================================== areThereDuplicates Solution(Multiple Pointers)
+// function areThereDuplicates(...args) {
+//     args.sort((a, b) => {
+//         if (a < b) return -1;
+//         if (a > b) return 1;
+//         return 0;
+//     });
+
+//     let start = 0;
+//     let next = 1;
+//     while (next < args.length) {
+//         if (args[start] === args[next]) {
+//             return true;
+//         }
+//         start++;
+//         next++;
+//     }
+//     return false;
+// }
+// console.log(areThereDuplicates(1,2,2,3));
+
+
+//  // ============================ areThereDuplicates One Liner Solution
+// function areThereDuplicates() {
+//     return new Set(arguments).size !== arguments.length;
+// }
+// console.log(areThereDuplicates(1,2,2));
+
+// // =============================    constructNote Solution
+// function constructNote(message, letters) {
+//     var frequency = {};
+//     var frequencyM = {};
+
+//     for (let i = 0; i < letters.length; i++) {
+//         frequency[letters[i]] = ++frequency[letters[i]] || 1;
+//     }
+
+//     for (let i = 0; i < message.length; i++) {
+//         frequencyM[message[i]] = ++frequencyM[message[i]] || 1;
+//     }
+
+//     for (let k in frequencyM) {
+//         if (!frequency[k]) return false;
+//         if (frequencyM[k] > frequency[k]) return false;
+//     }
+
+//     return true;
+// }
+// console.log(constructNote(1, 2, 2));
+
+
+// // =============================     findAllDuplicates Solution
+// function findAllDuplicates(nums) {
+//     let ans = [];
+//     var s = new Set();
+//     for (let i = 0; i < nums.length; i++) {
+//         s.has(nums[i]) ? ans.push(nums[i]) : s.add(nums[i])
+//     }
+//     return ans;
+// }
+
+// console.log(findAllDuplicates("A"));
+
+
+
+
+// // =============================   averagePair Solution
+function averagePair(arr, num) {
+    let start = 0
+    let end = arr.length - 1;
+    while (start < end) {
+        let avg = (arr[start] + arr[end]) / 2
+        if (avg === num) return true;
+        else if (avg < num) start++
+        else end--
+    }
+    return false;
+}
+
+
+
+// // ============================= isSubsequence Solution - Iterative
+function isSubsequence(str1, str2) {
+    var i = 0;
+    var j = 0;
+    if (!str1) return true;
+    while (j < str2.length) {
+        if (str2[j] === str1[i]) i++;
+        if (i === str1.length) return true;
+        j++;
+    }
+    return false;
+}
+
+
+
+
+// // =============================  isSubsequence Solution - Recursive but not O(1) Space
+function isSubsequence(str1, str2) {
+    if (str1.length === 0) return true
+    if (str2.length === 0) return false
+    if (str2[0] === str1[0]) return isSubsequence(str1.slice(1), str2.slice(1))
+    return isSubsequence(str1, str2.slice(1))
+}
+
+
+// // =============================  findPair Solution
+// O(n) space + O(n) time
+function findPair(arr, n) {
+    // if n is 0, we just need to see if there's any duplicate in the array
+    if (n === 0) {
+        const seen = new Set();
+        for (let num of arr) {
+            if (seen.has(num)) {
+                return true;
+            }
+            seen.add(num);
+        }
+        return false;
+    }
+
+    // for non-zero n, place all elements in a set
+    const setVals = new Set(arr);
+
+    // check for val + n or val - n in the set
+    for (let val of arr) {
+        if (setVals.has(val + n) || setVals.has(val - n)) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+// O(1) space + O(n log n) time
+function findPair(arr, num) {
+    arr.sort((a, b) => a - b);
+    let i = 0;
+    let j = 1;
+    while (i < arr.length && j < arr.length) {
+        if (i !== j && Math.abs(arr[j] - arr[i]) === Math.abs(num)) {
+            return true
+        } else if (arr[j] - arr[i] < num) {
+            j++
+        } else {
+            i++
+        }
+    }
+    return false;
+}
+
+
+
+
+// // ============================= maxSubArray Solution
+function maxSubarraySum(arr, num) {
+    if (arr.length < num) return null;
+
+    let total = 0;
+    for (let i = 0; i < num; i++) {
+        total += arr[i];
+    }
+    let currentTotal = total;
+    for (let i = num; i < arr.length; i++) {
+        currentTotal += arr[i] - arr[i - num];
+        total = Math.max(total, currentTotal);
+    }
+    return total;
+}
+
+
+// // =============================  minSubArrayLen Solution
+function minSubArrayLen(nums, sum) {
+    let total = 0;
+    let start = 0;
+    let end = 0;
+    let minLen = Infinity;
+
+    while (start < nums.length) {
+        // if current window doesn't add up to the given sum then 
+        // move the window to right
+        if (total < sum && end < nums.length) {
+            total += nums[end];
+            end++;
+        }
+        // if current window adds up to at least the sum given then
+        // we can shrink the window 
+        else if (total >= sum) {
+            minLen = Math.min(minLen, end - start);
+            total -= nums[start];
+            start++;
+        }
+        // current total less than required total but we reach the end, need this or else we'll be in an infinite loop 
+        else {
+            break;
+        }
+    }
+
+    return minLen === Infinity ? 0 : minLen;
+}
+// // =============================  findLongestSubstring Solution
+function findLongestSubstring(str) {
+    let longest = 0;
+    let seen = {};
+    let start = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+        if (seen[char]) {
+            start = Math.max(start, seen[char]);
+        }
+        // index - beginning of substring + 1 (to include current in count)
+        longest = Math.max(longest, i - start + 1);
+        // store the index of the next char so as to not double count
+        seen[char] = i + 1;
+    }
+    return longest;
+}
+
+
+
+
+// // =============================   countZeroes Solution
+function countZeroes(arr) {
+    // add whatever parameters you deem necessary - good luck!
+    let firstZero = findFirst(arr)
+    if (firstZero === -1) return 0;
+
+    return arr.length - firstZero
+}
+
+function findFirst(arr, low = 0, high = arr.length - 1) {
+    if (high >= low) {
+        let mid = low + Math.floor((high - low) / 2)
+        if ((mid === 0 || arr[mid - 1] === 1) && arr[mid] === 0) {
+            return mid;
+        } else if (arr[mid] === 1) {
+            return findFirst(arr, mid + 1, high)
+        }
+        return findFirst(arr, low, mid - 1)
+    }
+    return -1;
+}
+// // =============================    sortedFrequency Solution
+function sortedFrequency(arr, num) {
+    let firstIdx = findFirst(arr, num);
+    if (firstIdx === -1) return firstIdx;
+    let lastIdx = findLast(arr, num);
+    return lastIdx - firstIdx + 1;
+}
+
+function findFirst(arr, num, low = 0, high = arr.length - 1) {
+    if (high >= low) {
+        let mid = Math.floor((low + high) / 2)
+        if ((mid === 0 || num > arr[mid - 1]) && arr[mid] === num) {
+            return mid;
+        } else if (num > arr[mid]) {
+            return findFirst(arr, num, mid + 1, high)
+        } else {
+            return findFirst(arr, num, low, mid - 1)
+        }
+    }
+    return -1
+}
+
+function findLast(arr, num, low = 0, high = arr.length - 1) {
+    if (high >= low) {
+        let mid = Math.floor((low + high) / 2)
+        if ((mid === arr.length - 1 || num < arr[mid + 1]) && arr[mid] === num) {
+            return mid;
+        } else if (num < arr[mid]) {
+            return findLast(arr, num, low, mid - 1)
+        } else {
+            return findLast(arr, num, mid + 1, high)
+        }
+    }
+    return -1
+}
+// // =============================   findRotatedIndex Solution
+function findRotatedIndex(array, num) {
+    var pivot = findPivot(array)
+    if (pivot > 0 && num >= array[0] && num <= array[pivot - 1]) {
+        return binarySearch(array, num, 0, pivot - 1);
+    } else {
+        return binarySearch(array, num, pivot, array.length - 1);
+    }
+}
+
+function binarySearch(array, num, start = 0, end = array.length - 1) {
+    if (array.length === 0) return -1;
+    if (num < array[start] || num > array[end]) return -1;
+
+    while (start <= end) {
+        var mid = Math.floor((start + end) / 2);
+        if (array[mid] === num) {
+            return mid;
+        } else if (num < array[mid]) {
+            end = mid - 1;
+        } else {
+            start = mid + 1;
+        }
+    }
+    return -1;
+}
+
+function findPivot(arr) {
+    if (arr.length === 1 || arr[0] < arr[arr.length - 1]) return 0;
+    var start = 0
+    var end = arr.length - 1;
+    while (start <= end) {
+        var mid = Math.floor((start + end) / 2);
+        if (arr[mid] > arr[mid + 1]) return mid + 1
+        else if (arr[start] <= arr[mid]) {
+            start = mid + 1
+        } else {
+            end = mid - 1
+        }
+    }
+}

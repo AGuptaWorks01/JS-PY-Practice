@@ -11,21 +11,21 @@
 // console.log(SmallestOfThree(30,1,9));
 
 // // Revising a array
-// const ArrayReverse = (arr) => {
-//   let start = 0;
-//   let end = arr.length - 1;
-//   while (start < end) {
-//     let temp = arr[start];
-//     arr[start] = arr[end];
-//     arr[end] = temp;
-//     start++;
-//     end--;
-//   }
-//   return arr;
-// };
-// let arr = [56, 89, 45, 42];
-// ArrayReverse(arr);
-// console.log(arr);
+const ArrayReverse = (arr) => {
+  let start = 0;
+  let end = arr.length - 1;
+  while (start < end) {   
+    let temp = arr[start];
+    arr[start] = arr[end];
+    arr[end] = temp;
+    start++;
+    end--;
+  }
+  return arr;
+};
+let arr = [56, 89, 45, 42];
+ArrayReverse(arr);
+console.log(arr);
 
 // let data = [9,7,5,3,1];
 // let temp;
@@ -230,13 +230,16 @@
 // // Using bubbleSort shorting Array
 // let bub = [89, 13, 56, 4, 26, 9]
 // for (let i = 0; i < bub.length; i++) {
-//     for (let j = 0; j < bub.length; j++) {
+//     let swapped = false;  
+//     for (let j = 0; j < bub.length -1 -i; j++) {
 //         if (bub[j] > bub[j + 1]) {
 //             let temp = bub[j]
 //             bub[j] = bub[j + 1]
 //             bub[j + 1] = temp
+//             swapped = true;
 //         }
 //     }
+//     if (!swapped) break;
 // }
 // console.log(bub);
 

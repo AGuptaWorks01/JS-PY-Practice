@@ -1,6 +1,6 @@
 // let data = []
 // let currentSize = data.length
-// let max = 5
+// // let max = 5
 // function push(newVal) {
 //     // if (currentSize >= max) {
 //     //     console.error("stack is full", newVal);
@@ -91,52 +91,52 @@
 
 
 
-class Stack {
-    item = []
-    currentSize
-    maxSize
+// class Stack {
+//     item = []
+//     currentSize
+//     maxSize
 
-    constructor(size) {
-        this.maxSize = size
-        this.currentSize = this.item.length
-    }
+//     constructor(size) {
+//         this.maxSize = size
+//         this.currentSize = this.item.length
+//     }
 
-    push(newVal) {
-        if (this.currentSize >= this.maxSize) {
-            console.log('Stack is Full');
-        } else {
-            this.item[this.currentSize] = newVal
-            this.currentSize++
-        }
-    }
-    pop() {
-        if (this.currentSize > 0) {
-            this.currentSize--
-            this.item.length = this.currentSize
-        } else {
-            console.log("Stack is already emplty!");
-        }
-    }
-    display() {
-        console.log(this.item);
-    }
-}
+//     push(newVal) {
+//         if (this.currentSize >= this.maxSize) {
+//             console.log('Stack is Full');
+//         } else {
+//             this.item[this.currentSize] = newVal
+//             this.currentSize++
+//         }
+//     }
+//     pop() {
+//         if (this.currentSize > 0) {
+//             this.currentSize--
+//             this.item.length = this.currentSize
+//         } else {
+//             console.log("Stack is already emplty!");
+//         }
+//     }
+//     display() {
+//         console.log(this.item);
+//     }
+// }
 
-function reverseString(str) {
-    let stack = new Stack(str.length)
+// function reverseString(str) {
+//     let stack = new Stack(str.length)
 
-    for (let char of str) {
-        stack.push(char)
-    }
+//     for (let char of str) {
+//         stack.push(char)
+//     }
 
-    let reversedStr = ''
-    while (stack.currentSize > 0) {
-        reversedStr += stack.item[stack.currentSize - 1]
-        stack.pop()
-    }
-    return reversedStr
-}
-let str = "Anurag"
-console.log("Unreversed String:", str);
-let reversedStr = reverseString(str)
-console.log("Reversed  String:", reversedStr);
+//     let reversedStr = ''
+//     while (stack.currentSize > 0) {
+//         reversedStr += stack.item[stack.currentSize - 1]
+//         stack.pop()
+//     }
+//     return reversedStr
+// }
+// let str = "Anurag"
+// console.log("Unreversed String:", str);
+// let reversedStr = reverseString(str)
+// console.log("Reversed  String:", reversedStr);
