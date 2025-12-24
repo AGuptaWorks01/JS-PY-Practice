@@ -230,9 +230,7 @@
 //   res = hello();
 //   console.log(res);
 // }
-
 // start();
-
 
 
 // var x = 21;
